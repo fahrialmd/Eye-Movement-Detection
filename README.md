@@ -1,8 +1,8 @@
-**Project Name: Eye Gaze Navigation System**
+# Project Name: Eye Gaze Navigation System
 
 Tailored for wheelchair implementation, the Eye Navigation System facilitates hands-free interaction with electronic devices. Users with mobility impairments navigate their wheelchairs accurately and effortlessly through the system's advanced features, including Self-Calibrated Illumination (SCI), MobileNetV3L, and Facial Landmark Detection. The integration of SCI ensures enhanced accuracy in low-light conditions by dynamically adjusting illumination levels for optimal image clarity and recognition. This innovative solution serves as a bridge between assistive technology and ML-driven navigation, offering uninterrupted functionality and greater autonomy to users across diverse environments.
 
-### System Components:
+# System Components:
 
 1.  **Computation Device:**
     The Jetson Nano is a compact, energy-efficient computing platform developed by NVIDIA, specifically designed for embedded AI and edge computing applications making it ideal for deployment in resource-constrained environments such as robotics, IoT devices, and embedded systems.
@@ -22,7 +22,7 @@ Tailored for wheelchair implementation, the Eye Navigation System facilitates ha
 6.  **Command Transmission to Arduino:**
     Upon classifying the ROI, the system transmits corresponding commands to an Arduino device through a serial connection. These commands prompt the movement of wheelchair motors in alignment with the identified classes.
     
-### Workflow:
+# Workflow:
 
 1. **Video Capture and Preprocessing:**
    The system initiates by capturing live video feed from a camera or webcam connected to the Jetson Nano. It then applies preprocessing techniques to enhance the quality and clarity of the images, ensuring accurate analysis in subsequent stages.
@@ -40,4 +40,4 @@ Tailored for wheelchair implementation, the Eye Navigation System facilitates ha
    Throughout the process, the system provides real-time feedback to the user, displaying the interpreted commands or actions on the screen. This feedback loop ensures seamless interaction and enables users to navigate devices intuitively.
 
 
-### Demonstration:
+# Demonstration:
