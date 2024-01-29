@@ -192,7 +192,7 @@ def main():
     )
 
     # Load SCI model
-    modelSCI = Finetunemodel("models/difficult.pt")
+    modelSCI = Finetunemodel("models/sci.pt")
     modelSCI = modelSCI.cuda()
     modelSCI.eval()
 
