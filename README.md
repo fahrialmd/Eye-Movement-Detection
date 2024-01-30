@@ -46,6 +46,7 @@ Tailored for wheelchair implementation, the Eye Navigation System facilitates ha
 
 ##  Demonstration:
 Please see the [deploy code](deploy.py) to run this project
+
 ![Demo Video](demo.gif)
 
 ##  Reference
