@@ -46,10 +46,11 @@ Tailored for wheelchair implementation, the Eye Navigation System facilitates ha
 
 ##  Demonstration:
 Please see the [deploy code](deploy.py) to run this project
+![Demo Video](demo.gif)
 
 ##  Reference
-SCI: https://github.com/vis-opt-group/SCI.
-Facial Landmark: https://github.com/NobuoTsukamoto/tensorrt-examples/tree/main/python/face_landmark.
+1. SCI: https://github.com/vis-opt-group/SCI.
+2. Facial Landmark: https://github.com/NobuoTsukamoto/tensorrt-examples/tree/main/python/face_landmark.
 
 
 

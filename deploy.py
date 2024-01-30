@@ -186,7 +186,7 @@ def main():
     # Video capture setup
     # gst_str = "v4l2src device=/dev/video0 ! image/jpeg, width=(int)352, height=(int)288, framerate=(fraction)30/1 ! jpegdec ! videoconvert ! appsink"
     # cap = cv2.VideoCapture(gst_str, cv2.CAP_GSTREAMER)
-    cap = cv2.VideoCapture("/dev/video0")
+    cap = cv2.VideoCapture("/dev/video2")
     print(
         f"Input Video (height, width, fps): {cap.get(cv2.CAP_PROP_FRAME_HEIGHT)}, {cap.get(cv2.CAP_PROP_FRAME_WIDTH)}, {cap.get(cv2.CAP_PROP_FPS)}"
     )
