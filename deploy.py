@@ -20,7 +20,7 @@ trt.init_libnvinfer_plugins(TRT_LOGGER, "")
 
 
 # Initialize serial port - replace '/dev/ttyACM0' with the port Arduino is connected to
-# ser = serial.Serial('/dev/ttyACM0', 9600) 
+ser = serial.Serial('/dev/ttyACM0', 9600) 
 time.sleep(2) # Wait for the connection to settle
 
 
@@ -58,7 +58,7 @@ def classify_image(
     mobilenet_engine,
 ):
     # Preprocess the ROI for MobileNetV3s
-    mobilenet_input_shape = (224, 224)  # Assuming MobileNetV3s expects 224x224 input
+    mobilenet_input_shape = (224, 224)  
     roi_frame_resized = cv2.resize(roi_frame, mobilenet_input_shape)
     roi_frame_rgb = cv2.cvtColor(roi_frame_resized, cv2.COLOR_BGR2RGB)
     roi_frame_normalized = roi_frame_rgb.astype("float32") / 255.0
@@ -112,7 +112,6 @@ def navigation(predicted_class):
         # Update the last predicted class and reset the timer
         navigation.last_class = predicted_class
         navigation.last_time = current_time
-
     return predicted_class
 
 # send command to arduino
@@ -186,7 +185,7 @@ def main():
     # Video capture setup
     # gst_str = "v4l2src device=/dev/video0 ! image/jpeg, width=(int)352, height=(int)288, framerate=(fraction)30/1 ! jpegdec ! videoconvert ! appsink"
     # cap = cv2.VideoCapture(gst_str, cv2.CAP_GSTREAMER)
-    cap = cv2.VideoCapture("/dev/video2")
+    cap = cv2.VideoCapture("/dev/video0")
     print(
         f"Input Video (height, width, fps): {cap.get(cv2.CAP_PROP_FRAME_HEIGHT)}, {cap.get(cv2.CAP_PROP_FRAME_WIDTH)}, {cap.get(cv2.CAP_PROP_FPS)}"
     )

@@ -1,0 +1,7 @@
+.git
+.vscode
+.dockerignore
+Dockerfile
+training.ipynb
+__pycache__/
+README.md
